@@ -10,14 +10,18 @@ public class App
     public static void main( String[] args )
     {
         Curso curso = new Curso(); //Instanciando a classe Curso (Criando um objeto)
-        curso.nome = "Sistemas de Informação";    
-        Curso curso2 = curso;
-        curso2.nome = "Ciencia da Comp";
+        
+        curso.setNome("Sistemas de Informação");
+      
+        Curso curso2 = new Curso();
 
+        curso2.setNome("Ciencia da computação");
 
+        curso = curso2;
 
-        System.out.println( curso.nome );
-        System.out.println( curso2.nome );
+        System.out.println( curso.getNome() );
+        System.out.println( curso2.getNome() );
+    
     }
     }
 
