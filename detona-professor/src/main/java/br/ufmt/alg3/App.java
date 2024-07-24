@@ -12,7 +12,7 @@ public class App
         Curso curso = new Curso(); //Instanciando a classe Curso (Criando um objeto)
         curso.nome = "Sistemas de Informação";    
         Curso curso2 = curso;
-        curso2.nome = "TEste"    ;
+        curso2.nome = "Ciencia da Comp";
 
 
 
