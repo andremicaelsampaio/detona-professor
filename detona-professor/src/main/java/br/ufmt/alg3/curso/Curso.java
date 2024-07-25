@@ -42,8 +42,7 @@ public class Curso {
 
     public String getPeriodo(){
         return periodo;
-    }
-    
+    }    
 
     public String getNota(){
         return nota;
