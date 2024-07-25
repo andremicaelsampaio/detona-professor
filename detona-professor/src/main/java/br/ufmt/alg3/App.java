@@ -17,7 +17,7 @@ public class App
 
         curso2.setNome("Ciencia da computação");
 
-        curso = curso2;
+        curso = curso2; // SI recebe CC
 
         System.out.println( curso.getNome() );
         System.out.println( curso2.getNome() );
