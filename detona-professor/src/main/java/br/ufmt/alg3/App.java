@@ -25,7 +25,7 @@ public class App
 
         Professor professor = new Professor();
 
-        professor.setNome("Testes");
+        professor.setNome("Testes n 2");
 
         System.out.println(professor.getNome());
     
