@@ -19,14 +19,21 @@ public class App
       teclado = new Scanner(System.in);
       // Estanciando o objeto scanner
       
-      Curso curso1 = new Curso();
-
+      for (int i=0;i<respostas.length;i++){
+      Curso c = new Curso();
+      
       System.out.print("Digite o nome do curso: ");
       String nome = teclado.nextLine();
 
-      curso1.setNome(nome);
+      c.setNome(nome);
+      System.out.println("O nome digitado foi " + c.getNome());
+      respostas[i] = c;
+    }
 
-      System.out.println("O nome digitado foi " + curso1.getNome());
+    for(Curso cursos : respostas) {
+        System.out.println("Curso avaliado:" + cursos.getNome());
+    }
+
     }
     }
 
