@@ -1,4 +1,6 @@
 package br.ufmt.alg3;
+import java.util.Scanner;
+
 import br.ufmt.alg3.curso.Curso;
 import br.ufmt.alg3.professor.Professor;
 
@@ -10,25 +12,21 @@ public class App
 {
     public static void main( String[] args )
     {
-        // Curso curso = new Curso(); //Instanciando a classe Curso (Criando um objeto)
-        
-        // curso.setNome("Sistemas de Informação");
+       Curso[] respostas;
+       respostas = new Curso[3];
+       // Estanciando o objeto curso
+      Scanner teclado;
+      teclado = new Scanner(System.in);
+      // Estanciando o objeto scanner
       
-        // Curso curso2 = new Curso();
+      Curso curso1 = new Curso();
 
-        // curso2.setNome("Ciencia da computação");
+      System.out.print("Digite o nome do curso: ");
+      String nome = teclado.nextLine();
 
-        // curso = curso2; // SI recebe CC
+      curso1.setNome(nome);
 
-        // System.out.println( curso.getNome() );
-        // System.out.println( curso2.getNome() );
-
-        Professor professor = new Professor();
-
-        professor.setNome("Testes n 2");
-
-        System.out.println(professor.getNome());
-    
+      System.out.println("O nome digitado foi " + curso1.getNome());
     }
     }
 
