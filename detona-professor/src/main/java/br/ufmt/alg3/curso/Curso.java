@@ -1,61 +1,35 @@
 package br.ufmt.alg3.curso;
 
-public class Curso {
-    
-    private String nome;
-    private String periodo; // Matutino, vespertino e noturno
-    private float nota; // Estrela 0 a 5 fracionada
-    private String comentario;
+import br.ufmt.alg3.Identificador;
+
+public class Curso extends Identificador {
     private String rga;
-    private String semestre; // 2024/1
+    private String periodo;
 
-    // Setter
-    public void setNome(String nome){
-        this.nome = nome;
+    public Curso() {
+        periodo = "Matutino";
     }
 
-    public void setPeriodo(String periodo){
-        this.periodo = periodo;
+    public Curso(String nome) {
+        this.nome = nome; // nome é protected na classe pai
+        this.periodo = "Noturno";
     }
 
-    public void setNota(String nota){
-        this.nota = nota;
+    public String getRga() {
+        return rga;
     }
 
-    public void setComentario(String comentario){
-        this.comentario = comentario;
-    }
-
-    public void setRGA(String rga){
+    public void setRga(String rga) {
         this.rga = rga;
     }
 
-    public void setSemestre(String semestre){
-        this.semestre = semestre;
-    }
-
-
-    // Getter
-    public String getNome(){
-        return nome;
-    }
-
-    public String getPeriodo(){
+    public String getPeriodo() {
         return periodo;
-    }    
-
-    public String getNota(){
-        return nota;
     }
 
-    public String getComentario(){
-        return comentario;
-    }   
+    public void setPeriodo(String periodo) {
+        this.periodo = periodo;
+    }
 
-    public String getRGA(){
-        return rga;
-    }   
-    public String getSemestre(){
-        return semestre;
-    }   
+    
 }
