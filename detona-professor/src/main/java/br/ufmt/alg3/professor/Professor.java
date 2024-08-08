@@ -2,11 +2,19 @@ package br.ufmt.alg3.professor;
 
 import br.ufmt.alg3.Identificador;
 
+<<<<<<< HEAD
 public class Professor extends Identificador {
 
     
     private String areaAtuacao;
     private String disciplina;    
+=======
+public class Professor extends Identificador{
+
+    
+    private String areaAtuacao;
+    private String disciplina;   
+>>>>>>> c64489b (teste)
     private String departamento;
     public String getAreaAtuacao() {
         return areaAtuacao;
@@ -32,5 +40,11 @@ public class Professor extends Identificador {
     //Setters
 
    
+
+   
+   
+
+
+    
 
 }
