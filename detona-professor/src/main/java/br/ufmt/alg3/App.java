@@ -22,7 +22,7 @@ public class App
       for (int i=0;i<respostas.length;i++){
       Curso c = new Curso();
       
-      System.out.print("Digite o nome do curso: ");
+      System.out.print("Digite os nome do curso: ");
       String nome = teclado.nextLine();
 
       c.setNome(nome);
