@@ -1,71 +1,36 @@
 package br.ufmt.alg3.professor;
 
-public class Professor {
+import br.ufmt.alg3.Identificador;
 
-    private String nome;
-    private String areaAtuacao;
-    private String disciplina;
-    private float nota;
-    private String semestre;
-    private String departamento;
-    private String comentario;
+public class Professor extends Identificador {
 
-
-    //Setters
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
     
-    public void setAreaAtuacao(String areaAtuacao) {
-        this.areaAtuacao = areaAtuacao;
-    }
-
-    public void setDisciplina(String disciplina) {
-        this.disciplina = disciplina;
-    }
-
-    public void setNota (float nota) {
-        this.nota = nota;
-    }
-
-    public void setSemestre(String semestre){
-        this.semestre = semestre;
-    }
-
-    public void setDepartamento (String departamento) {
-        this.departamento = departamento;
-    }
-
-    public void setComentario (String comentario) {
-        this.comentario = comentario;
-    }
-    //Getters
-
-    public String getNome() {
-        return nome;
-    }
-
+    private String areaAtuacao;
+    private String disciplina;    
+    private String departamento;
     public String getAreaAtuacao() {
         return areaAtuacao;
     }
-
-    public String getDisciplina(){
+    public void setAreaAtuacao(String areaAtuacao) {
+        this.areaAtuacao = areaAtuacao;
+    }
+    public String getDisciplina() {
         return disciplina;
     }
-
-    public float getNota() {
-        return nota;
-    }
-
-    public String getSemestre(){
-        return semestre;
+    public void setDisciplina(String disciplina) {
+        this.disciplina = disciplina;
     }
     public String getDepartamento() {
         return departamento;
     }
-    public String getComentario(){
-        return comentario;
+    public void setDepartamento(String departamento) {
+        this.departamento = departamento;
     }
+   
+
+
+    //Setters
+
+   
 
 }
